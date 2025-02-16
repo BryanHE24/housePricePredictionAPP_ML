@@ -9,12 +9,12 @@ import joblib
 df = pd.read_csv('dataset/Housing.csv')
 
 # Encode categorical features
-categorical_features = ['mainroad', 'guestroom', 'basement', 'hotwaterheating', 'airconditioning', 'prefarea', 'furnishingstatus']
+categorical_features = ['mainroad', 'basement', 'furnishingstatus']  # Removed unnecessary features
 for col in categorical_features:
     df[col] = LabelEncoder().fit_transform(df[col])
 
-# Select features and target
-features = ['area', 'bedrooms', 'bathrooms', 'stories', 'mainroad', 'guestroom', 'basement', 'hotwaterheating', 'airconditioning', 'parking', 'prefarea', 'furnishingstatus']
+# Select relevant features and target
+features = ['area', 'bedrooms', 'bathrooms', 'mainroad', 'basement', 'parking', 'furnishingstatus']  # Simplified features
 X = df[features]
 y = df['price']
 

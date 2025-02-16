@@ -1,0 +1,140 @@
+/* General Container */
+.container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+h2 {
+  color: #2c3e50;
+  font-size: 24px;
+}
+
+p {
+  color: #666;
+  margin-bottom: 15px;
+}
+
+/* Error Message */
+.error-message {
+  background: #ffdddd;
+  color: #d9534f;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+/* Form Grid */
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+
+/* Inputs & Selects */
+input, select {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+input:focus, select:focus {
+  border-color: #3498db;
+  outline: none;
+  box-shadow: 0px 0px 5px rgba(52, 152, 219, 0.5);
+}
+
+/* Labels */
+label {
+  font-size: 14px;
+  font-weight: bold;
+  text-align: left;
+  color: #555;
+}
+
+/* Submit Button */
+button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #2ecc71;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #27ae60;
+}
+
+button:disabled {
+  background-color: #95a5a6;
+  cursor: not-allowed;
+}
+
+/* Prediction Box */
+.prediction-box {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  background: #ecf0f1;
+  font-size: 20px;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+/* Metrics Box for R² and Feature Importance */
+.metrics-box {
+  margin-top: 30px;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
+  color: #2c3e50;
+}
+
+.metrics-box h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.metrics-box p,
+.metrics-box ul {
+  font-size: 16px;
+  margin-top: 5px;
+  color: #555;
+}
+
+.metrics-box ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.metrics-box li {
+  margin: 5px 0;
+}
+
+/* Styling for the R² score */
+.metrics-box p strong {
+  font-size: 18px;
+  color: #2980b9;
+}
+
+/* Styling for feature importance */
+.metrics-box li strong {
+  font-weight: bold;
+  color: #e74c3c;
+}
