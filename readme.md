@@ -1,6 +1,6 @@
 # House Price Prediction Web App
 
-This project provides a web-based application that predicts the price of a house based on various features such as area, number of bedrooms, bathrooms, parking spaces, and more. It uses a trained machine learning model deployed via a Flask backend and a React front-end interface.
+This project provides a web-based application that predicts the price of a house based on various features such as area, number of bedrooms, bathrooms, parking spaces. Using this dataset from kaggle: https://www.kaggle.com/datasets/yasserh/housing-prices-dataset It uses a trained machine learning model deployed via a Flask backend and a React front-end interface.
 
 ## Features
 * Predict house prices based on user input.
@@ -27,8 +27,8 @@ Make sure you have the following installed:
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/house-price-prediction.git
-cd house-price-prediction
+git clone https://github.com/BryanHE24/housePricePredictionAPP_ML.git
+cd housePricePredictionAPP_ML
 ```
 
 2. Create a virtual environment and activate it:
@@ -123,3 +123,7 @@ These metrics are calculated in the `model_evaluation.py` script.
 
 ## License
 This project is licensed under the MIT License.
+
+## Image
+![Screenshot from 2025-02-15 18-44-06](https://github.com/user-attachments/assets/9d554407-707d-4819-87fa-4ddc1e513f91)
+
